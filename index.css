@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+      background-image: url("gift.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+.head{
+      float:left;
+      position: fixed;
+      padding-left: 2%;
+      top:48%;
+      font-size: 3vw;
+    }
+.gift{
+      width:2.5vw;
+      height:2.5vw;
+    }
+
+input[type=text],input[type=password],input[type=tel], select, input[type=number],textarea 
+{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+label 
+{
+  padding: 5px 3px 12px 0;
+  display: inline-block;
+}
+.required
+{
+  color: red;
+}
+/*colors:blueviolet,darkviolet,darkorchid,cyan,#39ff14;#bd3bfd*/
+input[type=submit] 
+{
+  background-color:#c654fe;
+  color: white;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color:darkorchid;
+}
+
+.container {
+  border-radius:1.5vw;
+  background-color:floralwhite;
+  width:50%;
+  float:right;
+  padding:2.5vw 3vw;
+  margin: 1vw;
+  box-shadow: 0.5vw 0.5vw orange;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top:0px;
+  }
+}

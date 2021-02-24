@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="w3form.css">
+</head>
+<body>
+  <div class="head">
+    <img src="icon.jpg" alt="gift" class="gift">
+      Free Gifts
+    <img src="icon.jpg" alt="gift" class="gift">
+  </div>
+  <div class="container"> 
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fname" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mname">Middle Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="mname" name="mname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lname" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email id</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" pattern=".+@gmail.com" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Create a password</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="password" id="pass" name="pass" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Confirm password</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="password" id="cnfpass" name="cnfpass" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="gender">Gender</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phno">Phone No.</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="alph" name="phno" placeholder="+91 XXXXXXXXXX"; pattern="[+91 ]{4}[0-9]{10}" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="alph">Alt. Phone No.</label>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="alph" name="alph" placeholder="+91 XXXXXXXXXX"; pattern="[+91 ]{4}[0-9]{10}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="curr">Current Address</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <textarea id="curr" name="curr" rows=2 required></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="perm">Permanant Address</label>
+      </div>
+      <div class="col-75">
+        <textarea id="perm" name="perm" rows=2></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="city">City</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="state">State</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <select id="state" name="state" required>
+          <option value="">--Select one--</option><option value="MH">Maharashtra</option><option value="WB">West Bengal</option>
+          <option value="TN">Tamilnadu</option><option value="Goa">Goa</option><option value="AP-TS">AP-TS</option>
+          <option value="CFN">California</option><option value="TS">Texas</option><option value="FLR">Florida</option>
+          <option value="DC">Washington</option><option value="SCT">Scotland</option><option value="YS">Yorkshire</option>
+          <option value="SD">Shandong</option><option value="JS">Jiangsu</option><option value="TK">Tohoku</option>
+          <option value="SK">Shikoku</option><option value="BR">Berry</option><option value="CG">Champagne</option>
+          <option value="VIC">Victoria</option><option value="NSW">New South Wales</option><option value="QL">Queensland</option>
+          <option value="TM">Tasmania</option><option value="NZ">New Zealand</option><option value="ZW">Zimbabwe</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country" required>
+          <option value="">--Select one--</option><option value="IN">India</option>
+          <option value="US">U.S</option><option value="UK">U.K</option>
+          <option value="CN">China</option><option value="JPN">Japan</option>
+          <option value="FRC">France</option><option value="USSR">Russia</option>    
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="zip">Zip code</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="zip" name="zip" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subscribe">Subscribe newsletter</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" id="yes" name="subscribe" value="Yes" checked>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="subscribe" value="No">
+        <label for="no">No</label>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
